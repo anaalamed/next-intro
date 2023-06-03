@@ -1,11 +1,11 @@
-import '@styles/global.css';
+import "@styles/global.css";
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
   title: "Promptia",
-  description: "Discover & Share AI Prompts "
-}
+  description: "Discover & Share AI Prompts ",
+};
 
 const RootLayout = ({ children }) => {
   return (
@@ -23,7 +23,7 @@ const RootLayout = ({ children }) => {
         </Provider>
       </body>
     </html>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
