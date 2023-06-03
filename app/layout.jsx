@@ -3,24 +3,27 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-    title: "Promptia",
-    description: "Discover & Share AI Prompts "
+  title: "Promptia",
+  description: "Discover & Share AI Prompts "
 }
 
 const RootLayout = ({ children }) => {
-    return (
-        <html lang="en">
-            <body>
-                <div className="main">
-                    <div className="gradient"></div>
-                </div>
-            </body>
+  return (
+    <html lang="en">
+      <body>
+        <Provider>
+          <div className="main">
+            <div className="gradient"></div>
+          </div>
 
-            <main className="app">
-                <Nav />
-                {children}</main>
-        </html>
-    )
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
+      </body>
+    </html>
+  )
 }
 
 export default RootLayout
