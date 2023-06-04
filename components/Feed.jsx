@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import PromptCard from "./PromptCard";
-import { Input } from "antd";
+import { Input, Space } from "antd";
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
-    <div className="mt-16 prompt_layout">
+    <Space wrap align="center" style={{ justifyContent: "center" }}>
       {data.map((post) => (
         <PromptCard
           key={post._id}
@@ -14,7 +14,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
           handleTagClick={handleTagClick}
         />
       ))}
-    </div>
+    </Space>
   );
 };
 
